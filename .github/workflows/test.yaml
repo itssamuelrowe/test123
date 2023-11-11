@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "nfpfh5OXpYm+Huc2tx4x2g=="
+        run: |
+          echo "nfpfh5OXpYm+Huc2tx4x2g=="
+          echo ${{ secrets.MY_SECRET }}
